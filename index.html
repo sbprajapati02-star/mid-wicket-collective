@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Mid-Wicket Collective — Premium Cricket Gear</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+
+  <!-- Fonts: Inter + Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">
+          <img src="assets/images/mwc-logo.png" alt="The Mid-Wicket Collective logo">
+        </div>
+        <div>
+          <h1>The Mid-Wicket Collective</h1>
+          <p>Heritage craft • Modern pickup • Premium feel</p>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a class="pill" href="catalog.html">Shop</a>
+        <a class="pill" href="#story">Our Story</a>
+        <a class="pill" href="#contact">Contact</a>
+        <a class="cart-btn" href="cart.html" aria-label="Open cart">
+          Cart <span class="badge" id="cartBadge">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- GREEN HERO HEADER -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-card">
+        <div class="kicker">Crafted for the discerning cricketer</div>
+        <h2>Premium cricket bats and gear, built with intent.</h2>
+        <p>
+          The Mid-Wicket Collective is a curated approach to cricket equipment:
+          classic craftsmanship, modern profiles, and a confident pickup — so you can play with intent.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="catalog.html">Shop Now</a>
+          <a class="btn secondary" href="#story">Learn More</a>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div class="side-card">
+          <h3>What we stand for</h3>
+          <div class="side-list">
+            <div class="side-item">
+              <strong>Premium Selection</strong>
+              <span>Strict grading, curated builds — no guesswork.</span>
+            </div>
+            <div class="side-item">
+              <strong>Modern Profiles</strong>
+              <span>Power where it matters — with control in hand.</span>
+            </div>
+            <div class="side-item">
+              <strong>Player-First Support</strong>
+              <span>Guidance on pickup, weight range, and setup.</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="section">
+      <div class="section-title">
+        <div>
+          <h3>Featured</h3>
+          <p>Signature builds and essentials — the best place to start.</p>
+        </div>
+        <a class="pill" href="catalog.html">View all →</a>
+      </div>
+
+      <div class="grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="section" id="story">
+      <div class="card panel">
+        <div class="kicker-gold">The MWC Story</div>
+        <h3 class="panel-title">A collective built around timing, intent, and craft.</h3>
+        <p class="panel-text">
+          Mid-wicket is where balance meets purpose. We obsess over pickup, edges, and sweet spot placement
+          so your gear feels composed under pressure — whether you’re building an innings or finishing one.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="card panel">
+        <div class="kicker-gold">Contact</div>
+        <h3 class="panel-title">Want a recommendation on weight & pickup?</h3>
+        <p class="panel-text">
+          Send us your playing style and preferred weight range — we’ll suggest the best fit.
+        </p>
+        <div class="cta-row">
+          <a class="btn primary" href="catalog.html">Browse products</a>
+          <a class="btn ghost" href="mailto:hello@themidwicketcollective.com">Email us</a>
+        </div>
+        <p class="small-note">(Replace the email address with your real business email when ready.)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><strong>The Mid-Wicket Collective</strong><br/>Premium Cricket Gear</div>
+      <div>© <span id="y"></span> • Crafted with heritage, played with intent.</div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
